@@ -3,11 +3,13 @@ import { useContext } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
-import { backendUrl } from '../../../admin/src/App'
+// import { backendUrl } from '../../../admin/src/App'
 import { toast } from 'react-toastify'
 import { useEffect } from 'react'
 
 const Verify = () => {
+           const backendUrl = "https://fullstack-backend-x64s.onrender.com";
+
          const {navigate,token,setCartItems}=useContext(ShopContext)
          const [searchParams,setSearchParams]=useSearchParams()
 
